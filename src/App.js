@@ -1,14 +1,16 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
+import Footer from './components/Footer';
 function App() {
   return (
 
-    <div class="= mx-auto max-w-7xl py-2 px-4">
-      <Navbar />
+    <div class="= flex flex-col h-screen ">
+      <Navbar class="" />
+      <main class="flex-grow">
       <Landing/>
-      {/* <div class="text-7xl text-red-500">      Hello world!!!!</div> */}
-
+      </main>
+      <Footer/>
     </div>
   );
 }
