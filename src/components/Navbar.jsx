@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import '../index.css'
 const Navbar = () => {
-    
+    const appName = "NoteApp";
     const [nav, setNav] = useState(false);
     const handleNav = () => {
         setNav(!nav)
@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <div class="flex justify-between items-center mx-auto max-w-7xl text-white px-2">
             <div class="hidden md:flex justify-between items-center h-10 w-full mx-auto">
-                <h1 class="text-3xl font-bold text-[#00df9a]">REACT.</h1>
+                <h1 class="text-3xl font-bold text-red-500">{appName}</h1>
                 <ul class="flex text-black">
                     <li class="p-4">Home</li>
                     <li class="p-4">Resources</li>
@@ -22,11 +22,11 @@ const Navbar = () => {
             
             <div class="w-full md:hidden">
             <div onClick={handleNav} class="w-full hover:cursor-pointer hover:opacity-70">
-                    {nav ? <AiOutlineClose  class="absolute right-2 m-2 w-8 h-8 text-red-300"/> : <AiOutlineMenu  class="absolute right-2 m-2 w-8 h-8 text-red-300"/>}
+                    {nav ? <AiOutlineClose  class=" right-2 m-2 w-8 h-8 text-red-300"/> : <AiOutlineMenu  class=" right-2 m-2 w-8 h-8 text-red-300"/>}
                 </div>
                 <div class={nav?'fixed left-0 top-0 w-3/5 border-r border-r-red-200  bg-red-100 h-full': 'hidden'}>
 
-                    <h1 class="text-3xl w-full font-bold text-[#00df9a] m-4">REACT.</h1>
+                    <h1 class="text-3xl w-full font-bold text-red-500 m-4">{appName}</h1>
 
                     <ul class="text-black pt-20 text-2xl p-4 uppercase">
                         <li class="p-4 border-b-2 border-white hover:border-black hover:opacity-60 hover:cursor-pointer animation-border">Home</li>
