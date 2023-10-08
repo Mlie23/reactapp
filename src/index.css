@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes borderAnimation {
+    0% {
+      transform: scaleX(0); /* Start with no width */
+      transform-origin: left;
+    }
+    100% {
+      transform: scaleX(1); /* End with full width */
+      transform-origin: right;
+    }
+  }
+  
+  .animation-border {
+    animation: borderAnimation 0.75s linear; /* Adjust animation duration as needed */
+  }
+
+  .delay-1 {
+    animation-delay: 0.1s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.2s;
+  }
+  
+  .delay-3 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-4 {
+    animation-delay: 0.4s;
+  }
+
+  
