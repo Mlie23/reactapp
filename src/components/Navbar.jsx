@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import '../index.css'
 const Navbar = () => {
-    const appName = "NoteApp";
+    const appName = "QuizWiz";
     const [nav, setNav] = useState(false);
     const handleNav = () => {
         setNav(!nav)
@@ -13,10 +13,18 @@ const Navbar = () => {
             <div class="hidden md:flex justify-between items-center h-10 w-full mx-auto">
                 <h1 class="text-3xl font-bold text-red-500">{appName}</h1>
                 <ul class="flex text-black">
-                    <li class="p-4">Home</li>
-                    <li class="p-4">Resources</li>
-                    <li class="p-4">About</li>
-                    <li class="p-4">Contact</li>
+                    <li class="p-2 border-2 rounded-md border-white hover:border-red-600 hover:bg-red-600 hover:text-white hover:font-semibold hover:cursor-pointer">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="p-2 border-2 rounded-md border-white hover:border-red-600 hover:bg-red-600 hover:text-white hover:font-semibold hover:cursor-pointer">
+                        <a href="#">Resources</a>
+                    </li>
+                    <li class="p-2 border-2 rounded-md border-white hover:border-red-600 hover:bg-red-600 hover:text-white hover:font-semibold hover:cursor-pointer">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="p-2 border-2 rounded-md border-white hover:border-red-600 hover:bg-red-600 hover:text-white hover:font-semibold hover:cursor-pointer">
+                        <a href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
             
@@ -29,10 +37,18 @@ const Navbar = () => {
                     <h1 class="text-3xl w-full font-bold text-red-500 m-4">{appName}</h1>
 
                     <ul class="text-black pt-20 text-2xl p-4 uppercase">
-                        <li class="p-4 border-b-2 border-white hover:border-black hover:opacity-60 hover:cursor-pointer animation-border">Home</li>
-                        <li class="p-4 border-b-2 border-white hover:opacity-60 hover:cursor-pointer hover:border-black animation-border delay-1">Resources</li>
-                        <li class="p-4 border-b-2 border-white hover:opacity-60 hover:cursor-pointer hover:border-black animation-border delay-2">About</li>
-                        <li class="p-4 border-b-2 border-white hover:opacity-60 hover:cursor-pointer hover:border-black animation-border delay-3">Contact</li>
+                        <li class="p-4 border-b-2 border-white hover:border-black hover:opacity-60 hover:cursor-pointer animation-border">
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="p-4 border-b-2 border-white hover:opacity-60 hover:cursor-pointer hover:border-black animation-border delay-1">
+                            <a href="#">Resources</a>
+                        </li>
+                        <li class="p-4 border-b-2 border-white hover:opacity-60 hover:cursor-pointer hover:border-black animation-border delay-2">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="p-4 border-b-2 border-white hover:opacity-60 hover:cursor-pointer hover:border-black animation-border delay-3">
+                            <a href="#">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
